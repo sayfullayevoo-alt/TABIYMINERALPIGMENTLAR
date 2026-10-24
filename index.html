@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Az kamar (Shofirkon) gil tuprog‘i — bentonit asosida olingan tabiiy mineral pigmentlar. Qurilish va lok-bo‘yoq sanoati uchun.">
+  <meta name="theme-color" content="#71320f">
+  <title>Tabiiy mineral pigmentlar</title>
+  <style>
+    :root {
+      --brown: #71320f;
+      --brown-dark: #4e220d;
+      --orange: #a9470b;
+      --green: #064a32;
+      --cream: #fff8ed;
+      --ink: #202020;
+      --muted: #5d554d;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #fffaf3 0%, #f5e4cb 100%);
+      line-height: 1.6;
+    }
+    .topbar {
+      background: #fff; color: var(--brown-dark);
+      padding: 10px 5%; display: flex; align-items: center;
+      justify-content: space-between; gap: 16px; flex-wrap: wrap;
+      border-bottom: 3px solid #e8c7a4;
+    }
+    .brand-wrap { display: flex; align-items: center; gap: 18px; min-width: 0; }
+    .university-logo { display: block; width: auto; height: 62px; max-width: min(100%, 300px); object-fit: contain; }
+    .brand { font-weight: 800; letter-spacing: .04em; font-size: .98rem; color: var(--brown); }
+    .languages { display: flex; gap: 7px; }
+    .languages button {
+      border: 1px solid rgba(255,255,255,.65); border-radius: 999px;
+      color: white; background: transparent; padding: 7px 13px;
+      cursor: pointer; font-weight: 700;
+    }
+    .languages button.active, .languages button:hover {
+      color: var(--brown-dark); background: white;
+    }
+    main { max-width: 1100px; margin: 0 auto; padding: 28px 20px 44px; }
+    .hero {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+      align-items: center; background: var(--white);
+      border-radius: 24px; overflow: hidden;
+      box-shadow: 0 12px 34px rgba(78,34,13,.12);
+      border: 1px solid #ead7bf;
+    }
+    .hero-copy { padding: clamp(24px, 4vw, 48px); }
+    .eyebrow {
+      display: inline-block; color: var(--green); font-weight: 800;
+      text-transform: uppercase; letter-spacing: .09em; font-size: .82rem;
+      margin-bottom: 10px;
+    }
+    h1 { margin: 0 0 15px; color: var(--brown); line-height: 1.05; font-size: clamp(2rem, 4vw, 3.45rem); }
+    .lead { font-size: 1.12rem; color: var(--muted); margin: 0 0 22px; }
+    .cta {
+      display: inline-block; background: var(--green); color: white;
+      text-decoration: none; font-weight: 800; border-radius: 10px;
+      padding: 12px 18px;
+    }
+    .cta:hover { background: #033b27; }
+    .poster { width: 100%; height: 100%; min-height: 430px; object-fit: cover; display: block; }
+    .section-title { color: var(--green); font-size: clamp(1.45rem, 3vw, 2rem); margin: 34px 0 16px; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card {
+      padding: 22px; border-radius: 18px; background: rgba(255,255,255,.88);
+      border: 1px solid #ead7bf; box-shadow: 0 6px 18px rgba(78,34,13,.06);
+    }
+    .card h3 { color: var(--brown); margin: 0 0 8px; font-size: 1.1rem; }
+    .card p { margin: 0; color: var(--muted); }
+    .applications {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+    }
+    .application {
+      background: white; padding: 17px 20px; border-radius: 14px;
+      border-left: 5px solid var(--orange); font-weight: 700;
+    }
+    .lead-card {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 22px; margin-top: 28px; padding: 26px;
+      background: var(--brown); color: white; border-radius: 20px;
+    }
+    .lead-card h2 { margin: 0 0 8px; font-size: 1.45rem; }
+    .lead-card p { margin: 4px 0; }
+    .phone { color: white; font-size: 1.25rem; font-weight: 800; white-space: nowrap; }
+    footer { text-align: center; padding: 22px 16px; color: #6b5544; font-size: .9rem; }
+    @media (max-width: 760px) {
+      .hero { grid-template-columns: 1fr; }
+      .brand-wrap { gap: 10px; }
+      .university-logo { height: 48px; max-width: 180px; }
+      .brand { font-size: .8rem; }
+      .poster { min-height: 0; max-height: none; }
+      .cards { grid-template-columns: 1fr; }
+      .applications { grid-template-columns: 1fr; }
+      .lead-card { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-wrap">
+      <img class="university-logo" src="buxdu-logo.png" alt="Buxoro davlat universiteti logotipi">
+      <div class="brand" data-i18n="brand">TABIIY MINERAL PIGMENTLAR</div>
+    </div>
+    <nav class="languages" aria-label="Language selector">
+      <button type="button" class="active" data-lang="uz" aria-pressed="true">UZ</button>
+      <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow" data-i18n="eyebrow">Innovatsion material</span>
+        <h1 data-i18n="title">Tabiiy mineral pigmentlar</h1>
+        <p class="lead" data-i18n="lead">Az kamar (Shofirkon) gil tuprog‘i — bentonit asosida olingan, qurilish va lok-bo‘yoq sanoatida qo‘llash uchun mo‘ljallangan tabiiy mineral pigmentlar.</p>
+        <a class="cta" href="tel:+998946608091" data-i18n="contact">Bog‘lanish</a>
+      </div>
+      <img class="poster" src="tabiiy-mineral-pigmentlar.png" alt="Tabiiy mineral pigmentlar mahsuloti haqida taqdimot posteri">
+    </section>
+
+    <section aria-labelledby="about-title">
+      <h2 class="section-title" id="about-title" data-i18n="aboutTitle">Mahsulot haqida</h2>
+      <div class="cards">
+        <article class="card">
+          <h3 data-i18n="nameTitle">Mahsulot nomi</h3>
+          <p data-i18n="nameText">Tabiiy mineral pigmentlar.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="techTitle">Ilmiy / texnik nomi</h3>
+          <p data-i18n="techText">Az kamar (Shofirkon) gil tuprog‘i (bentonit)ni kimyoviy qayta ishlash asosida olingan tabiiy mineral pigmentlar.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="descTitle">Qisqa tavsifi</h3>
+          <p data-i18n="descText">Qurilish va lok-bo‘yoq sanoatida qo‘llash uchun mo‘ljallangan mineral pigmentlar.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="uses-title">
+      <h2 class="section-title" id="uses-title" data-i18n="usesTitle">Asosiy qo‘llanilish sohasi</h2>
+      <div class="applications">
+        <div class="application" data-i18n="use1">Devor bo‘yoqlari</div>
+        <div class="application" data-i18n="use2">Fasad qoplamalari</div>
+        <div class="application" data-i18n="use3">Interyer dizayn</div>
+        <div class="application" data-i18n="use4">Dekorativ suvoqlar</div>
+      </div>
+    </section>
+
+    <section class="lead-card" aria-labelledby="lead-title">
+      <div>
+        <h2 id="lead-title" data-i18n="leadTitle">Loyiha rahbari</h2>
+        <p data-i18n="leadRole">Kimyo va neft-gaz texnologiyalari kafedrasi professori, k.f.d. (DSc)</p>
+        <p><strong data-i18n="leadName">Mardonov O‘ktam Mardonovich</strong></p>
+      </div>
+      <a class="phone" href="tel:+998946608091">+998 94 660 80 91</a>
+    </section>
+  </main>
+
+  <footer data-i18n="footer">Tabiiy mineral pigmentlar · Ma’lumot va hamkorlik uchun bog‘laning.</footer>
+
+  <script>
+    const translations = {
+      uz: {
+        brand: "TABIIY MINERAL PIGMENTLAR",
+        eyebrow: "Innovatsion material",
+        title: "Tabiiy mineral pigmentlar",
+        lead: "Az kamar (Shofirkon) gil tuprog‘i — bentonit asosida olingan, qurilish va lok-bo‘yoq sanoatida qo‘llash uchun mo‘ljallangan tabiiy mineral pigmentlar.",
+        contact: "Bog‘lanish",
+        aboutTitle: "Mahsulot haqida",
+        nameTitle: "Mahsulot nomi",
+        nameText: "Tabiiy mineral pigmentlar.",
+        techTitle: "Ilmiy / texnik nomi",
+        techText: "Az kamar (Shofirkon) gil tuprog‘i (bentonit)ni kimyoviy qayta ishlash asosida olingan tabiiy mineral pigmentlar.",
+        descTitle: "Qisqa tavsifi",
+        descText: "Qurilish va lok-bo‘yoq sanoatida qo‘llash uchun mo‘ljallangan mineral pigmentlar.",
+        usesTitle: "Asosiy qo‘llanilish sohasi",
+        use1: "Devor bo‘yoqlari",
+        use2: "Fasad qoplamalari",
+        use3: "Interyer dizayn",
+        use4: "Dekorativ suvoqlar",
+        leadTitle: "Loyiha rahbari",
+        leadRole: "Kimyo va neft-gaz texnologiyalari kafedrasi professori, k.f.d. (DSc)",
+        leadName: "Mardonov O‘ktam Mardonovich",
+        footer: "Tabiiy mineral pigmentlar · Ma’lumot va hamkorlik uchun bog‘laning."
+      },
+      ru: {
+        brand: "НАТУРАЛЬНЫЕ МИНЕРАЛЬНЫЕ ПИГМЕНТЫ",
+        eyebrow: "Инновационный материал",
+        title: "Натуральные минеральные пигменты",
+        lead: "Натуральные минеральные пигменты на основе глины Азкамар (Шофиркон) — бентонита, предназначенные для строительной и лакокрасочной промышленности.",
+        contact: "Связаться",
+        aboutTitle: "О продукте",
+        nameTitle: "Название продукта",
+        nameText: "Натуральные минеральные пигменты.",
+        techTitle: "Научное / техническое название",
+        techText: "Натуральные минеральные пигменты, полученные путём химической переработки глинистой почвы Азкамар (Шофиркон) — бентонита.",
+        descTitle: "Краткое описание",
+        descText: "Минеральные пигменты для применения в строительной и лакокрасочной промышленности.",
+        usesTitle: "Основные области применения",
+        use1: "Краски для стен",
+        use2: "Фасадные покрытия",
+        use3: "Дизайн интерьера",
+        use4: "Декоративные штукатурки",
+        leadTitle: "Руководитель проекта",
+        leadRole: "Профессор кафедры химических технологий и технологий нефти и газа, доктор химических наук (DSc)",
+        leadName: "Мардонов Уктам Мардонович",
+        footer: "Натуральные минеральные пигменты · Для информации и сотрудничества свяжитесь с нами."
+      },
+      en: {
+        brand: "NATURAL MINERAL PIGMENTS",
+        eyebrow: "Innovative material",
+        title: "Natural Mineral Pigments",
+        lead: "Natural mineral pigments produced from Azkamar (Shofirkon) clay soil (bentonite), intended for use in the construction and paints-and-coatings industries.",
+        contact: "Contact us",
+        aboutTitle: "About the product",
+        nameTitle: "Product name",
+        nameText: "Natural mineral pigments.",
+        techTitle: "Scientific / technical name",
+        techText: "Natural mineral pigments obtained through chemical processing of Azkamar (Shofirkon) clay soil (bentonite).",
+        descTitle: "Brief description",
+        descText: "Mineral pigments intended for applications in construction and the paints-and-coatings industry.",
+        usesTitle: "Main applications",
+        use1: "Wall paints",
+        use2: "Facade coatings",
+        use3: "Interior design",
+        use4: "Decorative plasters",
+        leadTitle: "Project lead",
+        leadRole: "Professor, Department of Chemical and Oil & Gas Technologies; Doctor of Chemical Sciences (DSc)",
+        leadName: "O‘ktam Mardonov",
+        footer: "Natural mineral pigments · Contact us for information and collaboration."
+      }
+    };
+
+    const langButtons = document.querySelectorAll("[data-lang]");
+    function setLanguage(lang) {
+      const selectedLanguage = translations[lang] ? lang : "uz";
+      const dictionary = translations[selectedLanguage];
+
+      document.documentElement.lang = selectedLanguage;
+
+      document.querySelectorAll("[data-i18n]").forEach(element => {
+        const key = element.dataset.i18n;
+        if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+          element.textContent = dictionary[key];
+        }
+      });
+
+      langButtons.forEach(button => {
+        const isActive = button.dataset.lang === selectedLanguage;
+        button.classList.toggle("active", isActive);
+        button.setAttribute("aria-pressed", String(isActive));
+      });
+
+      try {
+        localStorage.setItem("tabiiy-mineral-pigmentlar-language", selectedLanguage);
+      } catch (error) {
+        // Language switching still works if browser storage is unavailable.
+      }
+    }
+
+    langButtons.forEach(button => {
+      button.addEventListener("click", () => setLanguage(button.dataset.lang));
+    });
+
+    // Restore the last selected language; default to Uzbek.
+    let initialLanguage = "uz";
+    try {
+      const savedLanguage = localStorage.getItem("tabiiy-mineral-pigmentlar-language");
+      if (savedLanguage && translations[savedLanguage]) initialLanguage = savedLanguage;
+    } catch (error) {
+      // Use Uzbek if browser storage is unavailable.
+    }
+    setLanguage(initialLanguage);  </script>
+</body>
+</html>
